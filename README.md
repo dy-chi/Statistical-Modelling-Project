@@ -4,11 +4,11 @@
 Link between rental bike usage and the hilliness and/or elevation of stations in the San Francisco area. For this project usage will be approximated by free bikes at a given time, and free regular bikes (non-e-bikes) at a given time. 
 
 ## Process
-### (get rental bike stations lat longs and station information including free_bikes, free e-bikes using city bike api)
-### (get all venues  within 100m of each bike station from both Yelp and Foursquare, scope of my project only includes venue ids and lat longs at this time)
-###  (get elevation info from USGS API using lat longs from both yelp and citybike.
-### (combine the dataframes using sqlite3 and use aggregate functions to get the range, and average of elevations of venues within  100m of a bike station
-### (use the proxies of hilliness (min max of venues within 100m and whether the station elev is higher or lower than the average elev of nearby venues (avg_elev_delta) to test if hilliness affects station usage
+# Step 1 get rental bike stations lat longs and station information including free_bikes, free e-bikes using city bike api
+# Step 2 get all venues  within 100m of each bike station from both Yelp and Foursquare, scope of my project only includes venue ids and lat longs at this time
+# Step 3  get elevation info from USGS API using lat longs from both yelp and citybike.
+# Step 4 combine the dataframes using sqlite3 and use aggregate functions to get the range, and average of elevations of venues within  100m of a bike station
+# Step 5 use the proxies of hilliness to test if hilliness affects station usage (min max of venues within 100m and whether the station elev is higher or lower than the average elev of nearby venues (avg_elev_delta)) 
 
 
 ## Results
